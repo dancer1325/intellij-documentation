@@ -2,6 +2,8 @@
   * TODO:
 * IDE configuration
   * TODO:
+* [Project configuration](working-with-projects.md)
+  * TODO:
 * TODO:
 * [Compilation & building](compiling-applications.md)
   * Build tools
