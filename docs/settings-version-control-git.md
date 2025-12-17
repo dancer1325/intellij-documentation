@@ -1,0 +1,11 @@
+[//]: # (Source: https://www.jetbrains.com/help/idea/settings-version-control-git.html)
+[//]: # (Downloaded: 2025-12-17 20:02:22)
+
+## Commit
+
+Enable staging area| Enable this option if you are more used to the concept of [staging](https://git-scm.com/docs/git-add) changes for commit instead of using [changelists](managing-changelists.html) where modified files are staged automatically.Using the staging area allows you to easily commit changes to the same file separately (including overlapping changes), and see which changes are already staged without switching focus from the editor. For more information, refer to [Use the Git staging area to commit changes](commit-and-push-changes.html#use-git-staging-area-to-commit-changes).If you enable the staging area, all existing changelists will be deleted.  
+---|---  
+Warn if CRLF line separators are about to be committed| Select this option to enable smart handling of `LF` and `CRLF` line separators. IntelliJ IDEA will analyze your configuration, warn you if you are about to commit CRLF into the repository, and suggest changing the `core.autocrlf` setting to `true` or `input` depending on your operating system.This setting is not applied to files where you have set any related Git attributes. In this case, IntelliJ IDEA assumes that you clearly understand what you are doing and excludes such files from analysis.If this option is deselected, you will have to fix issues with line endings manually using the [Diff Viewer dialog](differences-viewer.html).  
+Warn when committing in detached HEAD or during rebase| Select this option if you want IntelliJ IDEA to display a warning when a commit is performed from a detached head or on rebase, as this may cause issues and code loss.  
+Add the 'cherry-picked from <hash>' suffix when picking commits pushed to protected branches| Select this option if you want to keep a reference to the original commit when cherry-picking a commit from a [protected branch](https://help.github.com/articles/about-protected-branches/). By default, no suffix is added when cherry-picking a change.  
+Configure GPG Key| Click to configure GPG Key for signing your commits or to select an existing key. For more information, refer to [Sign commits with GPG keys](set-up-GPG-commit-signing.html).
