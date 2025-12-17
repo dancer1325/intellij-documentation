@@ -1,39 +1,29 @@
-https://www.jetbrains.com/help/idea/working-with-projects.html
+[//]: # (Source: https://www.jetbrains.com/help/idea/working-with-projects.html)
+[//]: # (Downloaded: 2025-12-17 20:07:27)
 
-* Projects
-  * == directory / keeps ALL your application
-  * == 👀Project settings + modules👀
-    * Project settings
-      * scope | CURRENT project
-      * place | ".idea/*.xml"
-      * allows
-        * storing
-          * VCS settings,
-          * SDKs, code style and spellchecker settings, 
-          * compiler output,
-          * libraries / AVAILABLE -- for -- ALL project's modules
-  * provides
-    * dependencies BETWEEN modules
+## Project, module, and global settings
 
-  ![](static/working-with-projects1.png)
+There are 3 types of settings in IntelliJ IDEA: module, project, and global settings.
 
-* module
-  * == module settings + content root
-    * module settings
-      * ".iml"
-      * scope | 1 module
-      * -- depend on --
-        * SDK & language level
-        * specific technology or framework
-    * content root
-      * == source code + resources + tests + ...
+![Types of settings](https://resources.jetbrains.com/help/img/idea/2025.3/settings-types.png)
 
-  ![](static/working-with-projects2.png)
+Module settings
+    
 
-* EXISTING settings == project settings + module settings + global settings
+These settings apply only to one module and are stored in the .iml file. A module can have an SDK and a language level that are different from those configured for a project, and their own libraries. They can also carry a specific technology or a framework.
 
-  ![](static/working-with-projects3.png)
-  
-  * global settings
-    * scope | ALL projects / SPECIFIC installation of IntelliJ IDEA
-    * == IDE appearance (for example, themes and color schemes) + installed and enabled plugins + debugger settings + global inspection profiles + ..
+For more information, refer to [Module structure settings](configure-modules.html).
+
+Project settings
+    
+
+These settings apply only to the current project. They are stored together with other project files in the .idea directory in the .xml format. For example, projects keep VCS settings, SDKs, code style and spellchecker settings, compiler output, libraries that are available for all modules within a project.
+
+For more information, refer to [Project settings](configure-project-settings.html) and [Project structure settings](project-settings-and-structure.html).
+
+Global settings
+    
+
+Global settings apply to all projects of a specific installation of IntelliJ IDEA. Such settings include IDE appearance (for example, themes and color schemes), the set of installed and enabled plugins, debugger settings, global inspection profiles, and much more.
+
+For more information, refer to [IDE configuration](configuring-project-and-ide-settings.html).
